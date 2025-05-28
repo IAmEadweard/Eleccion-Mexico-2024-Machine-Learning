@@ -10,4 +10,4 @@
 
 <h3>Ganador previsto: Claudia Sheinbaum Pardo con 58.30%</h3>
 
-<img src="Figure_1.png" alt="Predicción 2024" width="500"/>
+<img src="Figure_1.png" alt="Predicción 2024" width="1000"/>
