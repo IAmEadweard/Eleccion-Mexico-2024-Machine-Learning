@@ -25,7 +25,7 @@
 <p>Jorge Álvarez Máynez: 8.56%</p>
 
 <h3>Utilicé la métrica de Error Absoluto Medio para evaluar el rendimiento del modelo, y sus resultados fueron estos:</h3>
-<p>Xóchitl Gálvez MAE de 3.92 </br> Claudia Sheinbaum MAE de 4.77 </br> JAM de 2.36</p>
+<p>Xóchitl Gálvez MAE de 3.92 </br> Claudia Sheinbaum MAE de 4.77 </br> Jorge Máynez MAE de 2.36</p>
 
 <p>Como verán, esta métrica (MAE) es el promedio de la diferencia absoluta entre el valor real y el valor predicho; da valores positivos, y mientras más pequeños sean los valores, es mejor. Para empezar, esta métrica de evaluación indica que la candidata con peor predicción fue Claudia Sheinbaum, que a Jorge Máynez fue al que mejor predijo, y que el valor de Xóchitl Gálvez es un poco elevado, pero representa una buena predicción.</p>
 
