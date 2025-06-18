@@ -31,7 +31,7 @@
 
 <p>En este caso, el modelo tuvo su menor error al predecir a Jorge Máynez, seguido de Xóchitl Gálvez, y con un mayor error en el caso de Claudia Sheinbaum. Aunque los valores predichos de Sheinbaum se aproximan bastante a su resultado real, el MAE refleja una mayor variabilidad en las encuestas, lo cual impacta el ajuste del modelo.</p>
 
-<h3>Obeservaciones</h3>
+<h3>Observaciones</h3>
 
 <p>El modelo sobrestimó significativamente a Xóchitl Gálvez, lo que pudo haber sido resultado de una tendencia inflada en las encuestas previas a mayo de 2024, posiblemente debido a sesgos de respuesta o encuestadoras afiliadas.</p>
 <p>Se observa una tendencia a la baja en los porcentajes de Xóchitl en los últimos meses, lo cual sugiere que votantes indecisos migraron a otras opciones, en especial a Jorge Máynez, quien mostró un crecimiento constante y estable hacia el final del periodo.</p>
