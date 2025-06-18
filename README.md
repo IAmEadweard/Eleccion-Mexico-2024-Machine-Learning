@@ -27,11 +27,18 @@
 <h3>Utilicé la métrica de Error Absoluto Medio para evaluar el rendimiento del modelo, y sus resultados fueron estos:</h3>
 <p>Xóchitl Gálvez MAE de 3.92 </br> Claudia Sheinbaum MAE de 4.77 </br> Jorge Máynez MAE de 2.36</p>
 
-<p>Como verán, esta métrica (MAE) es el promedio de la diferencia absoluta entre el valor real y el valor predicho; da valores positivos, y mientras más pequeños sean los valores, es mejor. Para empezar, esta métrica de evaluación indica que la candidata con peor predicción fue Claudia Sheinbaum, que a Jorge Máynez fue al que mejor predijo, y que el valor de Xóchitl Gálvez es un poco elevado, pero representa una buena predicción.</p>
+<p>El MAE es una métrica que calcula el promedio de la diferencia absoluta entre los valores reales y los valores predichos, sin importar si fueron sobrestimados o subestimados. Cuanto menor es el MAE, mejor es la precisión del modelo.</p>
+
+<p>En este caso, el modelo tuvo su menor error al predecir a Jorge Máynez, seguido de Xóchitl Gálvez, y con un mayor error en el caso de Claudia Sheinbaum. Aunque los valores predichos de Sheinbaum se aproximan bastante a su resultado real, el MAE refleja una mayor variabilidad en las encuestas, lo cual impacta el ajuste del modelo.</p>
+
+<h3>Obeservaciones</h3>
+
+<p>El modelo sobrestimó significativamente a Xóchitl Gálvez, lo que pudo haber sido resultado de una tendencia inflada en las encuestas previas a mayo de 2024, posiblemente debido a sesgos de respuesta o encuestadoras afiliadas.</p>
+<p>Se observa una tendencia a la baja en los porcentajes de Xóchitl en los últimos meses, lo cual sugiere que votantes indecisos migraron a otras opciones, en especial a Jorge Máynez, quien mostró un crecimiento constante y estable hacia el final del periodo.</p>
+<p>Aunque el MAE indica que la predicción de Máynez fue la más precisa, esto también puede explicarse por la menor varianza en las encuestas sobre su candidatura, lo cual facilitó el aprendizaje del modelo.</p>
+<p>En el caso de Claudia Sheinbaum, el modelo predijo correctamente su victoria con un margen pequeño de error. Aunque el MAE es mayor en su caso, esto se debe en parte a la alta dispersión de datos en las encuestas, no necesariamente a una mala predicción general.</p>
 
 <h3>Conclusión</h3>
-<p>Analizando las respuestas del modelo con MAE, aparentemente sin sentido, nos damos cuenta de que el modelo predijo muy bien a Claudia Sheinbaum, aunque el algoritmo no opina lo mismo; que el modelo sobrestimó mucho a Xóchitl Gálvez, aunque el algoritmo tampoco lo interpreta así; y que la predicción de Jorge Máynez fue buena, aunque no mejor que la de Claudia Sheinbaum, pero el algoritmo considera que la de Máynez fue la mejor.</p>
+<p>Tomando en cuenta el análisis del gráfico y la evaluación cuantitativa, se concluye que el modelo de regresión lineal aplicado fue capaz de capturar con buena precisión las tendencias generales de los candidatos, especialmente con Máynez y Sheinbaum. La sobrestimación de Xóchitl Gálvez revela una limitación común en modelos predictivos basados en encuestas: el posible sesgo en los datos de entrada.</p>
 
-<p>Entonces, solo me queda recalcar que algo debió haber pasado en los últimos meses antes de las elecciones, recordando que las encuestas de esta base de datos fueron realizadas entre julio de 2023 y mayo de 2024. Algo debió haber ocurrido antes del 2 de junio o en los ultimos meses de encuestas para que se beneficiara un poco a Jorge Máynez y se perjudicara a Xóchitl Gálvez. De Claudia Sheinbaum no hay mucho que decir, pues la diferencia entre sus valores reales y los predichos no es mucha.</p>
-
-<p>Aunque el algoritmo no tiene mucha certeza sobre lo que pasó con ella, con los otros dos sí. Por lo tanto, debo concluir que los resultados no son muy diferentes a los reales, y muy probablemente sí ocurrió algo. Tomando en cuenta que esta base de datos utilizada no contempla las encuestas de personas que no sabían por qué candidato querían votar, llego ahora a la conclusión de que el conteo de los votos fue transparente y no hubo fraude.</p>
+<p>Ademas, este modelo no contempló explícitamente a los votantes indecisos, cuya decisión final probablemente influyó en el ajuste de las proporciones, especialmente en el descenso de Xóchitl y el crecimiento de Máynez. No se detectan anomalías significativas entre los resultados reales y predichos que sugieran fraude electoral. Por lo tanto, los resultados predichos reflejan adecuadamente la realidad, y cualquier diferencia puede atribuirse a cambios legítimos en la intención de voto durante los últimos meses antes de la elección.</p>
